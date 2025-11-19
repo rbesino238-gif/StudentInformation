@@ -154,7 +154,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Matura MT Script Capitals", 10.2F);
-            this.button3.Location = new System.Drawing.Point(914, 295);
+            this.button3.Location = new System.Drawing.Point(914, 270);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 36);
             this.button3.TabIndex = 10;
