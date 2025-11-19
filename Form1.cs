@@ -42,13 +42,15 @@ namespace StudentInformation
 
             public ClubRegistrationQuery()
             {
-                connectionString = @"YOUR CONNECTION STRING HERE";
-                // Russel :
-                    
 
-                 sqlConnect = new SqlConnection(connectionString);
+
+                connectionString = @"Data Source=(localdb)\MSSQLLocalDB;
+Initial Catalog=ClubDB_RusselNielBesino;Integrated Security=True;Encrypt=False;
+TrustServerCertificate=True;userid=soriano.j;password=12345";
+                sqlConnect = new SqlConnection(connectionString);
                 dataTable = new DataTable();
                 bindingSource = new BindingSource();
+
             }
 
             public bool DisplayList()
@@ -65,7 +67,7 @@ namespace StudentInformation
                 return true;
             }
 
-            // INSERT METHOD
+
             public bool RegisterStudent(int ID, long StudentID, string FirstName, string MiddleName,
                 string LastName, int Age, string Gender, string Program)
             {
@@ -88,7 +90,7 @@ namespace StudentInformation
                 return true;
             }
 
-            // UPDATE METHOD (FOR CHALLENGE)
+
             public bool UpdateMember(long StudentID, string FirstName, string MiddleName,
                 string LastName, int Age, string Gender, string Program)
             {
